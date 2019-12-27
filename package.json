@@ -5,7 +5,11 @@
   "repository": "https://github.com/devheedoo/javascript-promises-an-introduction.git",
   "author": "Heedo Kim <devheedoo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
+    "jest": "^24.9.0",
     "xmlhttprequest": "^1.8.0"
   }
 }

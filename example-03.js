@@ -44,7 +44,6 @@ var asyncRecovery1, asyncRecovery2;
 
 function getSuccess() {
   return new Promise(function(resolve, reject) {
-    console.log('success');
     resolve('success');
   })
 }
@@ -62,11 +61,18 @@ asyncThing2 = getFail;
 asyncRecovery1 = function() { console.log('recovery1'); }
 asyncRecovery2 = function() { console.log('recovery2'); }
 
-asyncThing1().then(function() {
-  return asyncThing2();
-}, function(err) {
+// asyncThing1().then(function() {
+//   return asyncThing2();
+// }, function(err) {
+//   return asyncRecovery1();
+// }).catch(function(err) {
+//   return asyncRecovery2();
+// });
+
+asyncThing1().catch(function() {
   return asyncRecovery1();
-}).catch(function(err) {
+}).then(function() {
+  return asyncThing2();
+}).catch(function() {
   return asyncRecovery2();
 });
-
