@@ -1,4 +1,5 @@
 // example-01.js
+// We can't get a chance to listen for them before loaded
 var img1 = document.querySelector('.img-1');
 
 img1.addEventListener('load', function() {
