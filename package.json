@@ -1,0 +1,11 @@
+{
+  "name": "javascript-promises-an-introduction",
+  "version": "1.0.0",
+  "main": "sample-02.js",
+  "repository": "https://github.com/devheedoo/javascript-promises-an-introduction.git",
+  "author": "Heedo Kim <devheedoo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
