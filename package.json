@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "jest": "^24.9.0",
+    "typescript": "^3.7.4",
     "xmlhttprequest": "^1.8.0"
   }
 }
